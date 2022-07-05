@@ -2,13 +2,13 @@ import re
 from urllib.parse import unquote
 
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 import dash_bootstrap_components as dbc
-from dash.dependencies import Output, Input, State
+from dash import Output, Input, State
 from dash.exceptions import PreventUpdate
-from dash_html_components.A import A
-from dash_table import DataTable
+from dash.html import A
+from dash.dash_table import DataTable
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
